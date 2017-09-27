@@ -1,0 +1,56 @@
+<script type="text/javascript">
+
+	console.log("sit223 inline script here!");
+
+	// First go at Vuejs
+	var data = {
+		glo2: {
+			'is-selected': false
+		},
+		glo3: {
+			'is-selected': false
+		},
+		glo4: {
+			'is-selected': false
+		},
+		glo5: {
+			'is-selected': false
+		},
+		glo6: {
+			'is-selected': false
+		},
+		glo7: {
+			'is-selected': false
+		}
+	};
+
+	var vm = new Vue({
+		el: '#app',
+		data: data,
+		methods: {
+
+			// Toggle glo hilight
+			ShowGlo: function(glo){
+				if(typeof this[glo] === 'undefined'){
+					this.Msg(glo + ' does not exists');
+				} else {
+					this[glo]['is-selected'] = this[glo]['is-selected'] ? false : true;
+				}
+			},
+
+			// Reset all
+			ResetGlos: function(){
+				for(var i = 2; i < 8; i++ ) {
+					this['glo' + i]['is-selected'] = false;
+				}
+			},
+
+			// Msg
+			Msg: function(s){
+				console.log('sit223 app: ' + s);
+			}
+
+		}
+	});
+
+</script>

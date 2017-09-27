@@ -1,0 +1,37 @@
+<div class="row top">
+	<div class="small-12 columns">
+		<h1 class="text-center">SIT223 Portfolio</h1>
+	</div>
+</div>
+
+<div class="row section sticky" data-sticky data-margin-top="0">
+	<div class="small-12 small-centered text-center columns sticky-content">
+		<nav>
+			<ul class="dropdown menu align-center" data-dropdown-menu>
+				<li>
+					<a href="#">Select a Topic</a>
+					<ul  class="menu  dd-menu" data-smooth-scroll  data-offset="100">
+						<li><a href="#introduction">Introduction</a></li>
+						<li><a href="#communication">Communication</a></li>
+						<li><a href="#inter‐personal">Inter‐Personal</a></li>
+						<li><a href="#self‐management">Self‐Management</a></li>
+						<li><a href="#global-citizenship">Global Citizenship</a></li>
+						<li><a href="#references">References &amp; Evidences</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<div>
+			<strong>Highlight</strong>:
+			<a @click.prevent="ShowGlo('glo2')" href="#" class="label label-glo2" title="Communication">GLO2</a> 
+			<a @click.prevent="ShowGlo('glo3')" href="#" class="label label-glo3" title="Digital literacy">GLO3</a> 
+			<a @click.prevent="ShowGlo('glo4')" href="#" class="label label-glo4" title="Critical thinking">GLO4</a> 
+			<a @click.prevent="ShowGlo('glo5')" href="#" class="label label-glo5" title="Problem solving">GLO5</a> 
+			<a @click.prevent="ShowGlo('glo6')" href="#" class="label label-glo6" title="Self-management">GLO6</a> 
+			<a @click.prevent="ShowGlo('glo7')" href="#" class="label label-glo7" title="Teamwork">GLO7</a>&nbsp; 
+			<a @click.prevent="ShowGlo('glo8')" href="#" class="label label-glo8" title="Global citizenship">GLO8</a>&nbsp; 
+			or	<a @click.prevent="ResetGlos"   href="#" class="label label-reset"  title="Reset all">RESET</a> 
+		</div>
+	</div>
+	<div class="sticky-border"></div>
+</div>

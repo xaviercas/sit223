@@ -1,0 +1,111 @@
+/*
+* @Author: xavier
+* @Date:   2017-09-26 15:33:10
+* @Last Modified by:   xavier
+* @Last Modified time: 2017-09-27 11:33:39
+*/
+
+// Colors lib
+$pantone: (
+	hemlock: 			#97C3A2,
+	placid-blue: 		#8CADD3,
+	sand: 				#DFCFBE,
+	cayenne: 			#E04951,
+	violet-tulip: 		#9B90C8,
+	celosia-orange: 	#E8733D,
+	paloma: 			#9E9D9C,
+	freesia:			#F6C324
+	);
+
+// Type
+strong {
+	color: $dark-gray;
+}
+
+h4 {
+	margin-bottom: 1rem;
+}
+
+.lead {
+	font-family: $header-font-family;
+}
+
+// Misc
+.top {
+	padding-top: 1rem;
+}
+
+.read {
+	border-left: 0.2rem solid $medium-gray;
+	padding-left: 1rem;
+}
+
+// Nav & Dropdown
+nav {
+	margin-bottom: 1rem;
+}
+.is-dropdown-submenu {
+	border-left: 0;
+	border-right: 0;
+	border-color: map-get($pantone, paloma);
+
+	a {
+		text-align: center;
+		&:hover {
+			background: map-get($pantone, sand);
+			color: $white;
+		}
+	}
+}
+
+// Labels 
+.label {
+	cursor: pointer;
+}
+
+.label-glo2 { background: map-get($pantone, celosia-orange); }
+.label-glo3 { background: map-get($pantone, placid-blue); }
+.label-glo4 { background: map-get($pantone, hemlock); }
+.label-glo5 { background: map-get($pantone, cayenne); }
+.label-glo6 { background: map-get($pantone, violet-tulip); }
+.label-glo7 { background: map-get($pantone, sand); }
+.label-glo8 { background: map-get($pantone, paloma); }
+.label-reset { background: $white; color: $dark-gray}
+
+// Sticky
+.sticky-content {
+	background: $white;
+	padding:.5rem 0 1rem 0;
+}
+.sticky-border {
+	height: 1rem;
+	background: $white;
+	opacity: 0.8;
+}
+
+// Hilight & animation
+.glo2, .glo3, .glo4, .glo5,.glo6, .glo7, .glo8 {
+	padding: 0.1rem;
+}
+
+@keyframes fadeIn {
+	0% {opacity: .3;}
+	100% {opacity: 1;}
+}
+
+.is-selected {
+	color: $white;
+	animation: 1s ease-in fadeIn;
+	&.glo2 { background: map-get($pantone, celosia-orange); }
+	&.glo3 { background: map-get($pantone, placid-blue); }
+	&.glo4 { background: map-get($pantone, hemlock); }
+	&.glo5 { background: map-get($pantone, cayenne); }
+	&.glo6 { background: map-get($pantone, violet-tulip); }
+	&.glo7 { background: map-get($pantone, sand); }
+	&.glo8 { background: map-get($pantone, paloma); }
+}
+
+.section {
+	margin-bottom: 2rem;
+}
+

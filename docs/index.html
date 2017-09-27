@@ -1,0 +1,273 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIT223 | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.4.4/dist/vue.min.js"></script>
+</head>
+<body>
+
+  
+  <div id="app">
+  	<div class="row top">
+  		<div class="small-12 columns">
+  			<h1 class="text-center">SIT223 Portfolio</h1>
+  		</div>
+  	</div>
+  	
+  	<div class="row section sticky" data-sticky data-margin-top="0">
+  		<div class="small-12 small-centered text-center columns sticky-content">
+  			<nav>
+  				<ul class="dropdown menu align-center" data-dropdown-menu>
+  					<li>
+  						<a href="#">Select a Topic</a>
+  						<ul  class="menu  dd-menu" data-smooth-scroll  data-offset="100">
+  							<li><a href="#introduction">Introduction</a></li>
+  							<li><a href="#communication">Communication</a></li>
+  							<li><a href="#inter‐personal">Inter‐Personal</a></li>
+  							<li><a href="#self‐management">Self‐Management</a></li>
+  							<li><a href="#global-citizenship">Global Citizenship</a></li>
+  							<li><a href="#references">References &amp; Evidences</a></li>
+  						</ul>
+  					</li>
+  				</ul>
+  			</nav>
+  			<div>
+  				<strong>Highlight</strong>:
+  				<a @click.prevent="ShowGlo('glo2')" href="#" class="label label-glo2" title="Communication">GLO2</a> 
+  				<a @click.prevent="ShowGlo('glo3')" href="#" class="label label-glo3" title="Digital literacy">GLO3</a> 
+  				<a @click.prevent="ShowGlo('glo4')" href="#" class="label label-glo4" title="Critical thinking">GLO4</a> 
+  				<a @click.prevent="ShowGlo('glo5')" href="#" class="label label-glo5" title="Problem solving">GLO5</a> 
+  				<a @click.prevent="ShowGlo('glo6')" href="#" class="label label-glo6" title="Self-management">GLO6</a> 
+  				<a @click.prevent="ShowGlo('glo7')" href="#" class="label label-glo7" title="Teamwork">GLO7</a>&nbsp; 
+  				<a @click.prevent="ShowGlo('glo8')" href="#" class="label label-glo8" title="Global citizenship">GLO8</a>&nbsp; 
+  				or	<a @click.prevent="ResetGlos"   href="#" class="label label-reset"  title="Reset all">RESET</a> 
+  			</div>
+  		</div>
+  		<div class="sticky-border"></div>
+  	</div>	<div class="row section">
+  		<div class="small-8 small-centered columns list">
+  	
+  			<!-- ==============================  introduction ==============================-->
+  			<div id="introduction" class="section">
+  				<!-- <h2 class="text-center">Introduction</h2> -->
+  				<h4 class="text-center"><small>(ULO2)</small></h4>
+  				<div class="lead">
+  					<p>
+  						Self-management is about learning independently. <span :class="glo3" class="glo3">Part of the learning</span> process, I feel, is recognizing what is to be learned or, in this scenario, addressing a chunk of faulty thinking and correcting it. <span :class="glo2" class="glo2">I realise that relying on vague and feel good notions as goals, such as ‘studying for a degree’ is not enough to provide the drive behind aspiration in the long term.</span> 
+  					</p>
+  				</div>
+  			</div>
+  	
+  			<!-- ==============================  communication ==============================-->
+  			<div id="communication" class="section">
+  				<h2 class="text-center">Communication</h2>
+  				<h4 class="text-center"><small>(GLO2)</small></h4>
+  	
+  				<!-- WHAT -->
+  				<h4>What?</h4>
+  				<div class="read">
+  					<p>
+  						Self-management is about learning independently. <span :class="glo3" class="glo3">Part of the learning</span> process, I feel, is recognizing what is to be learned or, in this scenario, addressing a chunk of faulty thinking and correcting it. <span :class="glo2" class="glo2">I realise that relying on vague and feel good notions as goals, such as ‘studying for a degree’ is not enough to provide the drive behind aspiration in the long term.</span> 
+  					</p>
+  				</div>
+  	
+  				<!-- SO WHAT -->
+  				<h4>So What?</h4>
+  				<div class="read">
+  				</div>
+  	
+  				<h4>What Now?</h4>
+  				<div class="read">
+  					<p>
+  					</p>
+  				</div>
+  			</div>
+  	
+  			<!-- ==============================  inter‐personal ==============================-->
+  			<div id="inter‐personal" class="section">
+  				<h2 class="text-center">Inter‐Personal</h2>
+  				<h4 class="text-center"><small>(GLO7)</small></h4>
+  	
+  				<h4>What?</h4>
+  				<div class="read">
+  					<p>
+  					</p>
+  				</div>
+  	
+  				<h4>So What?</h4>
+  				<div class="read">
+  					<p>
+  					</p>
+  				</div>
+  	
+  				<h4>What Now?</h4>
+  				<div class="read">
+  					<p>
+  					</p>
+  				</div>
+  			</div>
+  	
+  			<!-- ==============================  self-management ==============================-->
+  			<div id="self‐management" class="section">
+  				<h2 class="text-center">Self-Management</h2>
+  				<h4 class="text-center"><small>(GLO6)</small></h4>
+  	
+  				<h4>What?</h4>
+  				<div class="read">
+  					<p>
+  					</p>
+  				</div>
+  	
+  				<h4>So What?</h4>
+  				<div class="read">
+  					<p>
+  					</p>
+  				</div>
+  	
+  				<h4>What Now?</h4>
+  				<div class="read">
+  					<p>
+  					</p>
+  				</div>
+  			</div>
+  	
+  			<!-- ==============================  global-citizenship ==============================-->
+  			<div id="global-citizenship" class="section">
+  				<h2 class="text-center">Global Citizenship</h2>
+  				<h4 class="text-center"><small>(GLO8)</small></h4>
+  	
+  				<h4>What?</h4>
+  				<div class="read">
+  					<p>
+  					</p>
+  				</div>
+  	
+  				<h4>So What?</h4>
+  				<div class="read">
+  					<p>
+  					</p>
+  				</div>
+  	
+  				<h4>What Now?</h4>
+  				<div class="read">
+  					<p>
+  					</p>
+  				</div>
+  			</div>
+  	
+  			<!-- ==============================  global-citizenship ==============================-->
+  			<div class="section"></div>
+  			<div id="references" class="section">
+  				<h4 class="text-center">References</h4>
+  				<hr>
+  				<div class="read">
+  					<p>
+  					</p>
+  				</div>
+  			
+  				<h4 class="text-center">Evidences</h4>
+  				<hr>
+  				<div class="row small-up-2 medium-up-3 large-up-4">
+  					<div class="column column-block">
+  						<img src="https://placehold.it/600x600" class="thumbnail" alt="">
+  					</div>
+  					<div class="column column-block">
+  						<img src="https://placehold.it/600x600" class="thumbnail" alt="">
+  					</div>
+  					<div class="column column-block">
+  						<img src="https://placehold.it/600x600" class="thumbnail" alt="">
+  					</div>
+  					<div class="column column-block">
+  						<img src="https://placehold.it/600x600" class="thumbnail" alt="">
+  					</div>
+  					<div class="column column-block">
+  						<img src="https://placehold.it/600x600" class="thumbnail" alt="">
+  					</div>
+  					<div class="column column-block">
+  						<img src="https://placehold.it/600x600" class="thumbnail" alt="">
+  					</div>
+  				</div>
+  			</div>	</div>
+  	</div></div>
+  <div class="row">
+  	<hr>
+  	<div class="small-12 columns">
+  		<p  class="text-center"><small>&copy;2017 XC - 600020507</small></p>
+  	</div>
+  	<hr>
+  </div>
+  <script type="text/javascript">
+  
+  	console.log("sit223 inline script here!");
+  
+  	// First go at Vuejs
+  	var data = {
+  		glo2: {
+  			'is-selected': false
+  		},
+  		glo3: {
+  			'is-selected': false
+  		},
+  		glo4: {
+  			'is-selected': false
+  		},
+  		glo5: {
+  			'is-selected': false
+  		},
+  		glo6: {
+  			'is-selected': false
+  		},
+  		glo7: {
+  			'is-selected': false
+  		}
+  	};
+  
+  	var vm = new Vue({
+  		el: '#app',
+  		data: data,
+  		methods: {
+  
+  			// Toggle glo hilight
+  			ShowGlo: function(glo){
+  				if(typeof this[glo] === 'undefined'){
+  					this.Msg(glo + ' does not exists');
+  				} else {
+  					this[glo]['is-selected'] = this[glo]['is-selected'] ? false : true;
+  				}
+  			},
+  
+  			// Reset all
+  			ResetGlos: function(){
+  				for(var i = 2; i < 8; i++ ) {
+  					this['glo' + i]['is-selected'] = false;
+  				}
+  			},
+  
+  			// Msg
+  			Msg: function(s){
+  				console.log('sit223 app: ' + s);
+  			}
+  
+  		}
+  	});
+  
+  </script>  <script src="assets/js/app.js"></script>
+
+<!--
+      _ — _
+    _| | | |
+   | | | | | _
+   | | | | |/ |
+   |          |  HI :) 
+   |         /   linkedin.com/in/xavier-castagne/  
+   \        /    
+    |      | 
+    |      |
+  -->
+</body>
+</html>
