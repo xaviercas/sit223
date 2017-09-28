@@ -13,7 +13,7 @@
 
   
   <div id="app">
-  	<div class="row top">
+  	<div id="top" class="row top">
   		<div class="small-12 columns">
   			<h1 class="text-center">SIT223 Portfolio</h1>
   		</div>
@@ -24,183 +24,193 @@
   			<nav>
   				<ul class="dropdown menu align-center" data-dropdown-menu>
   					<li>
-  						<a href="#">Select a Topic</a>
+  						<a class="text-center" href="#">Select a Topic</a>
   						<ul  class="menu  dd-menu" data-smooth-scroll  data-offset="100">
-  							<li><a href="#introduction">Introduction</a></li>
-  							<li><a href="#communication">Communication</a></li>
+  							<li><a href="#top">Introduction</a></li>
   							<li><a href="#inter‐personal">Inter‐Personal</a></li>
+  							<li><a href="#communication">Communication</a></li>
   							<li><a href="#self‐management">Self‐Management</a></li>
   							<li><a href="#global-citizenship">Global Citizenship</a></li>
-  							<li><a href="#references">References &amp; Evidences</a></li>
+  							<li><a href="#references">References</a></li>
   						</ul>
   					</li>
   				</ul>
   			</nav>
   			<div>
   				<strong>Highlight</strong>:
-  				<a @click.prevent="ShowGlo('glo2')" href="#" class="label label-glo2" title="Communication">GLO2</a> 
+  				<!-- <a @click.prevent="ShowGlo('glo2')" href="#" class="label label-glo2" title="Communication">GLO2</a>  -->
   				<a @click.prevent="ShowGlo('glo3')" href="#" class="label label-glo3" title="Digital literacy">GLO3</a> 
   				<a @click.prevent="ShowGlo('glo4')" href="#" class="label label-glo4" title="Critical thinking">GLO4</a> 
   				<a @click.prevent="ShowGlo('glo5')" href="#" class="label label-glo5" title="Problem solving">GLO5</a> 
-  				<a @click.prevent="ShowGlo('glo6')" href="#" class="label label-glo6" title="Self-management">GLO6</a> 
-  				<a @click.prevent="ShowGlo('glo7')" href="#" class="label label-glo7" title="Teamwork">GLO7</a>&nbsp; 
-  				<a @click.prevent="ShowGlo('glo8')" href="#" class="label label-glo8" title="Global citizenship">GLO8</a>&nbsp; 
+  				<!-- <a @click.prevent="ShowGlo('glo6')" href="#" class="label label-glo6" title="Self-management">GLO6</a>  -->
+  				<!-- <a @click.prevent="ShowGlo('glo7')" href="#" class="label label-glo7" title="Teamwork">GLO7</a> -->
+  				<!-- <a @click.prevent="ShowGlo('glo8')" href="#" class="label label-glo8" title="Global citizenship">GLO8</a> -->&nbsp; 
   				or	<a @click.prevent="ResetGlos"   href="#" class="label label-reset"  title="Reset all">RESET</a> 
   			</div>
   		</div>
   		<div class="sticky-border"></div>
   	</div>	<div class="row section">
   		<div class="small-8 small-centered columns list">
-  	
   			<!-- ==============================  introduction ==============================-->
   			<div id="introduction" class="section">
   				<!-- <h2 class="text-center">Introduction</h2> -->
   				<h4 class="text-center"><small>(ULO2)</small></h4>
   				<div class="lead">
-  					<p>
-  						Self-management is about learning independently. <span :class="glo3" class="glo3">Part of the learning</span> process, I feel, is recognizing what is to be learned or, in this scenario, addressing a chunk of faulty thinking and correcting it. <span :class="glo2" class="glo2">I realise that relying on vague and feel good notions as goals, such as ‘studying for a degree’ is not enough to provide the drive behind aspiration in the long term.</span> 
+  					<p class="intro">
+  						This portfolio incorporates four individual reflections based on the content discussed in SIT223 over the term. The reflections address the topics of inter-personal skills and team work, communication, self-management and global citizenship. The topics are introduced through the various assignments and exercises completed during the term including group work and seminars. The portfolio’s reflections follow the model found in the “Framework for reflective practice” (Williams, Woolliams &amp; Spiro 2012, p. 79). As communication is a core subject of this unit, this portfolio is also available as a word document <!-- Digital literacy -->
+  			<span :class="glo3" class="glo3">uploaded on cloud Deakin</span>. 
   					</p>
   				</div>
-  			</div>
-  	
-  			<!-- ==============================  communication ==============================-->
-  			<div id="communication" class="section">
-  				<h2 class="text-center">Communication</h2>
-  				<h4 class="text-center"><small>(GLO2)</small></h4>
-  	
-  				<!-- WHAT -->
-  				<h4>What?</h4>
-  				<div class="read">
-  					<p>
-  						Self-management is about learning independently. <span :class="glo3" class="glo3">Part of the learning</span> process, I feel, is recognizing what is to be learned or, in this scenario, addressing a chunk of faulty thinking and correcting it. <span :class="glo2" class="glo2">I realise that relying on vague and feel good notions as goals, such as ‘studying for a degree’ is not enough to provide the drive behind aspiration in the long term.</span> 
-  					</p>
-  				</div>
-  	
-  				<!-- SO WHAT -->
-  				<h4>So What?</h4>
-  				<div class="read">
-  				</div>
-  	
-  				<h4>What Now?</h4>
-  				<div class="read">
-  					<p>
-  					</p>
-  				</div>
-  			</div>
-  	
-  			<!-- ==============================  inter‐personal ==============================-->
-  			<div id="inter‐personal" class="section">
+  			</div>			<!-- ==============================  teamwork inter‐personal ==============================-->
+  			<div class="section" id="inter‐personal">
   				<h2 class="text-center">Inter‐Personal</h2>
   				<h4 class="text-center"><small>(GLO7)</small></h4>
-  	
   				<h4>What?</h4>
   				<div class="read">
-  					<p>
-  					</p>
+  					<p>GLO7 Teamwork describes a range of inter-personal skills, and knowledge about how a group interacts to reach a ‘common outcome’ (Deakin 2013). Team work is an essential learning in this unit and as we were placed into workgroup, I found that it was important to have a channel of communication. <!-- Digital literacy -->
+  			<span :class="glo3" class="glo3">I set up a Microsoft office online group which enabled sharing files, group emails and conversation. The group also made frequent use of the BBCollaborate for voice meetings.</p>
+  					<p>Three exercises required some amount of interaction with other students: <!-- Digital literacy -->
+  			<span :class="glo3" class="glo3">the Media Watch assignment</span>, the interview practice and the <!-- Digital literacy -->
+  			<span :class="glo3" class="glo3">scenario analysis</span>.</p>
+  					<p>Unlike on campus students who are acquainted with each other and benefit of seminars to get together as groups, the group work for <!-- Digital literacy -->
+  			<span :class="glo3" class="glo3">cloud student</span>s is self-organising and I found participation could be an issue.</p>
+  					<p>The week 7 interview practice was organised using <!-- Digital literacy -->
+  			<span :class="glo3" class="glo3">BB Collaborate</span>. Only two of us out of a group of four turned up for the meeting. I had prepared some questions based on the position the other team member was applying for. At the meeting however, we felt that role playing ‘interview’ was not the right thing to do. In retrospect I feel the interview exercise could have benefited from a third party chairing the session. Nevertheless we went through the few questions I had and the exercise turned into an hour long interesting conversation about each other’s employment and aspirations. From the other team member <!-- Digital literacy -->
+  			<span :class="glo3" class="glo3">I discovered a section of the IT industry</span> about which I was ignorant.</p>
+  					<p>In week 10, the scenario analysis exercise particularly tested our teamwork skills as the assignment had to be completed within a week. A team member and myself organised an initial meeting. Prior to the meeting I worked through the analysis questions, outlining some answers and familiarising myself with the ACS code of ethics and privacy policies.<br>
+  					A few core questions required the identification of an ethical dilemma, which I was unable to outline. I presented my notes at the meeting and for over one hour the group discussed and expanded on each questions. I found the discussion process worked well. Importantly we formed a clear agreement that there was not ethical dilemma present in our scenario.</p>
+  					<p>Teamwork in for the scenario analysis went smoothly and work was completed on time, in contrast with our first assignment which took over two weeks to complete. From the experience I have realised that being proactive pays off when it comes to remote group work.</p>
   				</div>
-  	
   				<h4>So What?</h4>
   				<div class="read">
-  					<p>
-  					</p>
+  					<p>The exercises in this unit formed my first experience at group work in the context of university, and, importantly, as a cloud student. Team work in this environment is very different from team work I have experienced in the work place, for instance, where people know each other, some hierarchical structure is in place and expectations are known. I feel that I have now a better understanding of how to approach, and what to expect from virtual team work in this particular environment.</p>
+  					<p>Among key aspects, I have observed that taking the initiative provides oneself with some sense of control over the direction of the project, although I was reluctant to do so, fearing to seem obtrusive. I also found that preparing for meetings, do background research, allows to ask more pointed questions and waste less time. On the other hand, not over planning but rather let the organisation and discussion of meetings free flow facilitates a more interactive environment. To a great degree I also found questioning and active listening could turn meetings into a learning platform.</p>
+  					<p>Conversely, I also learned not to expect too much from others but rather focus on the end task. The disembodied nature of <!-- Digital literacy -->
+  			<span :class="glo3" class="glo3">remote studying</span> and group work, I feel, make for a lesser sense of commitment to a team, and therefore participation is not always at its best.</p>
+  					<p>The virtual aspect and the small size of the team also make it hard to frame these group exercises within theories. Identifying the Belbin team types (Cottrell 2015, pp. 140-1) may offer some guidance, but I would be cautious at imposing or attempting to delineate formal roles for each team members. As one team member pointed out, some meeting where more a akin to a chat over a cup of coffee.</p>
   				</div>
-  	
-  				<h4>What Now?</h4>
+  				<h4>Now What?</h4>
   				<div class="read">
-  					<p>
-  					</p>
+  					<p>Team work skills fit within the broader context of interpersonal skills (Cottrell 2015, p. 129) and I recently had the opportunity to apply some of the point noted in the So What section albeit in a very different context.<br>
+  					As a member of a not for profit sport club, I was recently, and unexpectedly, called upon to teach classes of 20 or more young children. I found that preparation but not over planning, measured expectation, and importantly listen to what the children have to say make for a productive and fun class.</p>
+  					<p>For the sake of learning about new technology, <!-- Digital literacy -->
+  			<span :class="glo3" class="glo3">I intend to look into tools such as Slack</span> the next time I am involved in a team situation.</p>
+  					<p>These group exercises have been a new experience for me. They have provided me with a formal understanding of teamwork and also enabled me to build an approach to <!-- Digital literacy -->
+  			<span :class="glo3" class="glo3">remote group work</span> which I believe will serve me well in my studies.</p>
   				</div>
-  			</div>
-  	
-  			<!-- ==============================  self-management ==============================-->
-  			<div id="self‐management" class="section">
+  			</div>			<!-- ==============================  communication ==============================-->
+  			<div class="section" id="communication">
+  				<h2 class="text-center">Communication</h2>
+  				<h4 class="text-center"><small>(GLO2)</small></h4>
+  				<div class="read">
+  					<p>GLO2 Communication encompasses a range of communication such as oral and written communication as well as interpersonal communication, <!-- Digital literacy -->
+  			<span :class="glo3" class="glo3">digital literacy</span>, body language and emotional intelligence (Nicole Koehler 2015, pp. 1-5). Communication is a core subject in this unit. Inter-personal communication was initially introduced in week two with <!-- Digital literacy -->
+  			<span :class="glo3" class="glo3">the Media Watch assignment</span>. The following weeks discussed communication in the form of self-promotion.</p>
+  					<p>The second week seminar required us to develop a Me in a Minute (MIM) speech, a self-promotional piece to showcase a relevant set of skills to a potential employer. The MIM exercise was initiated by the elevator speech exercise of week one. During that online seminar I could not bring myself to come up with an elevator speech. I did not find the premise of the elevator speech scenario inspiring. Arguably, the exercise is important not the context, yet the situation is a trigger for inspiration, I find. The days following I thought about the employment I would like, the sort of person I would likely to enthuse to, and then wrote an elevator speech.</p>
+  					<p>Although the thought process behind creating a MIM was very similar, there were some notable differences. The foremost is that unlike an elevator speech, a MIM is not based on role play. I was required to expand on a set of skills and other attributes pertaining to my field of study (a catch-22 (Nichols 1970)). While <!-- Digital literacy -->
+  			<span :class="glo3" class="glo3">I have acquired some IT skills</span> from freelancing I have very little confidence in how these skills compare in an actual ICT workplace. Additionally, I am employed part time in the hospitality industry and I am a career changer. <br>I struggled to write my MIM, but after a while I was able to extract transferable skills from my current and past employment as well, as expand on the small range of hard skills acquired from my current studies and working on websites.</p>
+  					<p>Week 6 was about developing a resume and cover letter. Having worked on the MIM made the process much easier. However, I took advantage of the resources made available during the seminar and <!-- Digital literacy -->
+  			<span :class="glo3" class="glo3">sent my resume to Deakin Talent many times in order to get feedback</span>. I was very impressed with Deakin Talent and made full use of the feedback I received. Later on in the unit, the week nine seminar introduced the Skills Framework for the Information Age (SFIA 2017b), a resource I will exploit in order to improve my MIM, resume and other pieces of self-promotional communication.</p>
+  				</div>
+  				<h4>So What?</h4>
+  				<div class="read">
+  					<p>I found that like the elevator speech, the making of a MIM or a resume need to be driven by the desire to achieve what one wants to achieve in terms of a career. For one thing, the drive is important in order to overcome the aversion I have for self-promotional communication. It is also important for building a piece of communication that speaks honestly to a prospective employer.</p>
+  					<p>In themselves, these self-promotional pieces were, I feel, a good exercise in self-examination. It made me realise that it is necessary to feel comfortable with MyBrand&trade; in order to go ‘out there’ and look for employment as a mature age student.</p>
+  				</div>
+  				<h4>Now What?</h4>
+  				<div class="read">
+  					<p>Of course, the self-promotional communication skills acquired in this unit will come into full practice when seeking an internship. I also intent to use them to find part-time work as a trainee programmer, and as a consequence I have recently added my MIM to <!-- Digital literacy -->
+  			<span :class="glo3" class="glo3">my LinkedIn profile</span>. I also intend to look more into SFIA and see how I could integrate the framework into my resume.</p>
+  					<p>I recognize these skills will need upkeep. I will update my resume and MIM, LinkedIn profile as I proceed in my studies, in accordance with the newly acquired knowledge and referring to this self-reflection to remind me of the intangible in the process.</p>
+  				</div>
+  			</div>			<!-- ==============================  self-management ==============================-->
+  			<div class="section" id="self‐management">
   				<h2 class="text-center">Self-Management</h2>
   				<h4 class="text-center"><small>(GLO6)</small></h4>
-  	
   				<h4>What?</h4>
   				<div class="read">
-  					<p>
-  					</p>
+  					<p>GLO6 describes self-management as working and learning independently as well as taking responsibility for one’s actions (Deakin 2015b).</p>
+  					<p>As a cloud student, I have to balance studies with part time employment, some freelancing, and a family life. I have found that procrastination and perfectionism to be the self-management issues I have to grapple with often. The week four seminar discussed some time management techniques and tools. I have been using the Pomodoro technique for a while. I also have been using <!-- Digital literacy -->
+  			<span :class="glo3" class="glo3">Trello boards</span>, discussed in week seven, although less often. I was pleased to find these classes confirmed I had taken the right steps to manage my time.</p>
+  					<p>Studying part time makes for a very slow progress. Although I intend to finish my degree by term two 2019 and complete an internship in term three 2019, I frequently reflect about ways of speeding things up. Among the points made in the ‘4D approach to time management’ in week four, I found de-commitment to be a plausible solution to that problem.</p>
+  					<p>Self-management also includes setting goals, short term and long term (UCD 2015). Many of the activities in this unit required me to analyse my current position and formalise my goals. While The Me in a Minute and resume building focused on ‘me now’, the Skills Audit assignment forced me to spell out my career aspirations in the short and long term identifying the gaps in my skillset and delineate a strategy to address these gaps.</p>
+  					<p>I found this activity to be challenging. I had to propose valid solutions to address my skill gaps within realistic time frames. This meant thinking clearly about my aspirations and taking them apart into achievable targets.</p>
   				</div>
-  	
   				<h4>So What?</h4>
   				<div class="read">
-  					<p>
-  					</p>
+  					<p>Self-management is about learning independently. Part of the learning process, I feel, is recognizing what is to be learned or, in my case, addressing a chunk of faulty thinking and correcting it. I realise that relying on a vague and feel good notion such as ‘studying for a degree’ as a goal in itself is not enough to provide the drive behind the ambition, particularly over a long period of time.</p>
+  					<p>The skills audit exercise offered a systematic approach to goal settings. It forced me to break down my goals into smaller manageable pieces. It also provided me with a mean to evaluate progress overtime. Importantly, the end result of the assignment provided not only a plan to achieve my career change goal, but a concrete motivational piece. I intend to keep, update, refer to and add to the skill audit plan as I progress.</p>
   				</div>
-  	
-  				<h4>What Now?</h4>
+  				<h4>Now What?</h4>
   				<div class="read">
-  					<p>
-  					</p>
+  					<p>The unit as a whole and the skill audit assignment specifically have helped me formulating my aspirations in concrete terms and provided me with some self-management tools to conduct, plan and monitor my progress. I think it is also important to recognise that this planning is limited in scope. It is restricted to the domain of university studies and addresses only my goals and my aspirations. But I am also a member of a family. As a group, we aspire to some perception of a fulfilling lifestyle.<br>
+  					The skills audit and the de-commitment strategy are references that I will include in my everyday life in order to inform my decision making process pertaining to studies within the broader context of family life.</p>
   				</div>
-  			</div>
-  	
-  			<!-- ==============================  global-citizenship ==============================-->
-  			<div id="global-citizenship" class="section">
+  			</div>			<!-- ==============================  global-citizenship ==============================-->
+  			<div class="section" id="global-citizenship">
   				<h2 class="text-center">Global Citizenship</h2>
   				<h4 class="text-center"><small>(GLO8)</small></h4>
-  	
   				<h4>What?</h4>
   				<div class="read">
-  					<p>
-  					</p>
+  					<p>Global citizenship is about the skills required to engage with a social and cultural environment other than one’s own. Global citizenship incorporates the skills required to identify, from one’s own discipline-related cultural circle, with a group that does not share the same knowledge (Deakin 2015c) and behave ‘ethically and productively in the professional context’ (Deakin 2015a).</p>
+  					<p>From week eight to week ten including assignment three, this unit introduced <!-- Critical thinking -->
+  			<span :class="glo4" class="glo4">professionalism and ethics in the workplace</span>. In week nine, <!-- Digital literacy -->
+  			<span :class="glo3" class="glo3">I visited the website sfia-online.org</span> to assess my current skills against the framework (SFIA 2017a, 2017b). The Skills Framework for the Information Age (SFIA), I find, is a good tool to communicate one’s own skills across various discipline, and one that I will make use of. One of the topic discussed in week ten was internship. SFIA, or <!-- Digital literacy -->
+  			<span :class="glo3" class="glo3">the Australian Computer Society (ACS)</span> equivalent, will help me to address the specific requirement of a future internship position and, if anything, appear more professional.</p>
+  					<p>Another example on the topic of global citizenship was the work done in <!-- Critical thinking -->
+  			<span :class="glo4" class="glo4">assignment three</span>. The exercise required our group to identify a number of <!-- Critical thinking -->
+  			<span :class="glo4" class="glo4">ethical issues in a workplace scenario</span>. From this exercise I leaned that to refer to authorities such as the ACS Code of Conduct and others helped articulate an informed appraisal when faced with an ethical dilemma.</p>
   				</div>
-  	
   				<h4>So What?</h4>
   				<div class="read">
-  					<p>
-  					</p>
+  					<p>Global citizenship is about identifying my ICT-related cultural knowledge and expectation in order to apprehend other’s discipline-related culture.</p>
+  					<p>Through freelancing I am currently involved in a job for a long standing client. They, my client, required a ‘visual’ update of their site. <!-- Digital literacy -->
+  			<span :class="glo3" class="glo3">The site is built upon an old open source content management system. My client has a set of expectations regarding the visual look of their site. They envision a clean and simple layout, such as the flat designs currently trending in web design, in their eyes a simple visual update. My understanding of their request matches their design vision, but not simply as a pretty look, but rather as the design being the direct consequence of a mobile first and responsive approach. The core of their current site depends on a single outdated JavaScript framework and the poor separation of concern makes for a slow and error prone updating process.</span> Although I have made the client aware of the situation, the fact remains that I feel the pressure is on me to update the site within a reasonable time frame.</p>
+  					<p>In this scenario, I have clearly failed to reach out to my client appropriately. <!-- Critical thinking -->
+  			<span :class="glo4" class="glo4">From an ethical point of view, on the one hand, I, arguably, have not advised my client firmly enough about the potential for problems ('ACS Code of Professional Conduct' 2014, p. 7e). On the other hand, my relationship with the client is such that, for instance, all jobs to date have been agreed upon verbally and casually.</span></p>
+  					<p>As mentioned earlier, a requirement of assignment three was to <!-- Critical thinking -->
+  			<span :class="glo4" class="glo4">identify an ethical dilemma</span>. I recognise that in my current scenario, an awareness of the ACS Code of Conduct could have informed the delicate balancing between nurturing a long standing relationship with my client and acting in a more professional manner.</p>
   				</div>
-  	
-  				<h4>What Now?</h4>
+  				<h4>Now? What</h4>
   				<div class="read">
-  					<p>
-  					</p>
+  					<p>Through the ACS Code of Ethics, I can identified various path to follow in regards to the scenario above. It is very likely I will complete the job mentioned, present a prototype and reiterate the potential downfalls of upgrading. One thing is certain, however, I will incur a cost. For the sake of the exercise, simplicity and privacy, I have omitted many pertinent details.</p>
+  					<p>Through this unit I have had the opportunity to explore ethical conduct. I intend to register for membership with the ACS as I believe it will be beneficial in the future.</p>
   				</div>
-  			</div>
-  	
-  			<!-- ==============================  global-citizenship ==============================-->
+  			</div>			<!-- ==============================  global-citizenship ==============================-->
   			<div class="section"></div>
-  			<div id="references" class="section">
+  			<div class="section" id="references">
   				<h4 class="text-center">References</h4>
   				<hr>
   				<div class="read">
-  					<p>
+  					<p>'ACS Code of Professional Conduct', 2014, retrieved 19 September 2017, <a href="https://www.acs.org.au/content/dam/acs/rules-and-regulations/Code-of-Professional-Conduct_v2.1.pdf">&lt;https://www.acs.org.au/content/dam/acs/rules-and-regulations/Code-of-Professional-Conduct_v2.1.pdf&gt;</a>.</p>
+  					<p>Cottrell, S 2015, Skills for success : personal development and employability, 3rd edn, Palgrave, London.</p>
+  					<p>Deakin 2013, Team work, <a href="http://teachassist.deakin.edu.au/wp-content/uploads/2015/06/GLO7-teamwork-quick-guide.pdf">&lt;http://teachassist.deakin.edu.au/wp-content/uploads/2015/06/GLO7-teamwork-quick-guide.pdf&gt;</a>.</p>
+  					<p>—— 2015a, 'Global Citizenship', retrieved 22 September 2017, <a href="http://teachassist.deakin.edu.au/wp-content/uploads/2015/06/GLO8-global-citizenship-quick-guide.pdf">&lt;http://teachassist.deakin.edu.au/wp-content/uploads/2015/06/GLO8-global-citizenship-quick-guide.pdf&gt;</a>.</p>
+  					<p>—— 2015b, 'Topic 1: Deakin Graduate Learning Outcomes 6 Self-management. What is meant by ‘self-management’?', Teaching and learning at Deakin self-management series, retrieved 21 September 2017, <a href="http://teachassist.deakin.edu.au/wp-content/uploads/2015/06/GLO6-topic1-what-is-meant-by-self-management.pdf">&lt;http://teachassist.deakin.edu.au/wp-content/uploads/2015/06/GLO6-topic1-what-is-meant-by-self-management.pdf&gt;</a>.</p>
+  					<p>—— 2015c, Topic 1: What is Global Citizenship?, Deakin University, retrieved 21 September 2017, <a href="http://teachassist.deakin.edu.au/wp-content/uploads/2015/06/GLO8-topic1-global-citizenship-what-is.pdf">&lt;http://teachassist.deakin.edu.au/wp-content/uploads/2015/06/GLO8-topic1-global-citizenship-what-is.pdf&gt;</a>.</p>
+  					<p>Nichols, M 1970, Catch-22, YouTube LLC, retrieved 21 September 2017, <a href="https://www.youtube.com/watch?v=Unn8fgs8fao">&lt;https://www.youtube.com/watch?v=Unn8fgs8fao&gt;</a>.
   					</p>
+  					<p>Nicole Koehler, RH-W 2015, 'Communication skills', retrieved 28 September 2017, <a href="http://teachassist.deakin.edu.au/wp-content/uploads/2015/06/GLO2-communication-skills.pdf">&lt;http://teachassist.deakin.edu.au/wp-content/uploads/2015/06/GLO2-communication-skills.pdf&gt;</a>.</p>
+  					<p>SFIA 2017a, Programming/software development, SFIA Foundation, retrieved 28 September 2017, <a href="https://www.sfia-online.org/en/sfia-6/skills/solution-development-and-implementation/systems-development/programming-software-development">&lt;https://www.sfia-online.org/en/sfia-6/skills/solution-development-and-implementation/systems-development/programming-software-development&gt;</a>.</p>
+  					<p>—— 2017b, Why SFIA?, SFIA Foundation, retrieved 21 September 2017, <a href="https://www.sfia-online.org/en">&lt;https://www.sfia-online.org/en&gt;</a>.</p>
+  					<p>UCD 2015, Self-Management, Trinity College Dublin, retrieved 21 September 2017, <a href="https://student-learning.tcd.ie/undergraduate/topics/self-management/">&lt;https://student-learning.tcd.ie/undergraduate/topics/self-management/&gt;</a>.</p>
+  					<p>Williams, K, Woolliams, M &amp; Spiro, J 2012, Reflective writing, Pocket study skills, Palgrave Macmillan, Houndmills, Basingstoke, Hampshire ; New York.</p>
+  				
+  				<h4>Catch 22</h4>
+  				<iframe width="560" height="315" src="https://www.youtube.com/embed/Unn8fgs8fao?showinfo=0" frameborder="0" allowfullscreen></iframe>
   				</div>
-  			
-  				<h4 class="text-center">Evidences</h4>
   				<hr>
-  				<div class="row small-up-2 medium-up-3 large-up-4">
-  					<div class="column column-block">
-  						<img src="https://placehold.it/600x600" class="thumbnail" alt="">
-  					</div>
-  					<div class="column column-block">
-  						<img src="https://placehold.it/600x600" class="thumbnail" alt="">
-  					</div>
-  					<div class="column column-block">
-  						<img src="https://placehold.it/600x600" class="thumbnail" alt="">
-  					</div>
-  					<div class="column column-block">
-  						<img src="https://placehold.it/600x600" class="thumbnail" alt="">
-  					</div>
-  					<div class="column column-block">
-  						<img src="https://placehold.it/600x600" class="thumbnail" alt="">
-  					</div>
-  					<div class="column column-block">
-  						<img src="https://placehold.it/600x600" class="thumbnail" alt="">
-  					</div>
-  				</div>
-  			</div>	</div>
-  	</div></div>
-  <div class="row">
-  	<hr>
-  	<div class="small-12 columns">
-  		<p  class="text-center"><small>&copy;2017 XC - 600020507</small></p>
+  			</div>		</div>
   	</div>
-  	<hr>
   </div>
+  <footer>
+  	<div class="row">
+  
+  		<div class="small-12 text-center columns">
+  			<small>&copy;2017 XC - 600020507</small>
+  		</div>
+  	</div>
+  </footer>
   <script type="text/javascript">
   
   	console.log("sit223 inline script here!");

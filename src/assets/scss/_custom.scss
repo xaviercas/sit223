@@ -2,7 +2,7 @@
 * @Author: xavier
 * @Date:   2017-09-26 15:33:10
 * @Last Modified by:   xavier
-* @Last Modified time: 2017-09-27 11:33:39
+* @Last Modified time: 2017-09-28 22:19:48
 */
 
 // Colors lib
@@ -23,7 +23,7 @@ strong {
 }
 
 h4 {
-	margin-bottom: 1rem;
+	margin-bottom: $global-padding;
 }
 
 .lead {
@@ -38,12 +38,18 @@ h4 {
 .read {
 	border-left: 0.2rem solid $medium-gray;
 	padding-left: 1rem;
+	text-align: justify;
+}
+
+.intro {
+	text-align: justify;
 }
 
 // Nav & Dropdown
 nav {
-	margin-bottom: 1rem;
+	margin-bottom: $global-padding;
 }
+
 .is-dropdown-submenu {
 	border-left: 0;
 	border-right: 0;
@@ -75,7 +81,7 @@ nav {
 // Sticky
 .sticky-content {
 	background: $white;
-	padding:.5rem 0 1rem 0;
+	padding:.5rem 0 $global-padding 0;
 }
 .sticky-border {
 	height: 1rem;
@@ -90,11 +96,13 @@ nav {
 
 @keyframes fadeIn {
 	0% {opacity: .3;}
-	100% {opacity: 1;}
+	50% {opacity: 1;}
+	100% {opacity: 0.8;}
 }
 
 .is-selected {
 	color: $white;
+	opacity: 0.8;
 	animation: 1s ease-in fadeIn;
 	&.glo2 { background: map-get($pantone, celosia-orange); }
 	&.glo3 { background: map-get($pantone, placid-blue); }
@@ -105,7 +113,21 @@ nav {
 	&.glo8 { background: map-get($pantone, paloma); }
 }
 
+// Sections
+#introduction {
+	padding-top: $global-padding * 2;
+}
 .section {
 	margin-bottom: 2rem;
+}
+
+// Footer
+footer{
+	background: $dark-gray;
+	color: $light-gray;
+	display: block;
+	.row {
+		padding: $global-padding;
+	}
 }
 
