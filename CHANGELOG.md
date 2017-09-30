@@ -7,6 +7,9 @@
 
 ## Backlog
 
+### 30/09/17
+Corrected typos. Finished GLOs.
+
 ### 28/09/17
 
 Do GLO4 critical thinking for all except citizenship

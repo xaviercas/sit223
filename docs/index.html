@@ -13,42 +13,48 @@
 
   
   <div id="app">
-  	<div id="top" class="row top">
-  		<div class="small-12 columns">
-  			<h1 class="text-center">SIT223 Portfolio</h1>
+  	<div id="top" class="top">
+  		<div class="row">
+  			<div class="small-12 columns">
+  				<h1 class="text-center">SIT223 Portfolio</h1>
+  			</div>
   		</div>
   	</div>
   	
-  	<div class="row section sticky" data-sticky data-margin-top="0">
-  		<div class="small-12 small-centered text-center columns sticky-content">
-  			<nav>
-  				<ul class="dropdown menu align-center" data-dropdown-menu>
-  					<li>
-  						<a class="text-center" href="#">Select a Topic</a>
-  						<ul  class="menu  dd-menu" data-smooth-scroll  data-offset="100">
-  							<li><a href="#top">Introduction</a></li>
-  							<li><a href="#inter‐personal">Inter‐Personal</a></li>
-  							<li><a href="#communication">Communication</a></li>
-  							<li><a href="#self‐management">Self‐Management</a></li>
-  							<li><a href="#global-citizenship">Global Citizenship</a></li>
-  							<li><a href="#references">References</a></li>
-  						</ul>
-  					</li>
-  				</ul>
-  			</nav>
-  			<div>
-  				<strong>Highlight</strong>:
-  				<!-- <a @click.prevent="ShowGlo('glo2')" href="#" class="label label-glo2" title="Communication">GLO2</a>  -->
-  				<a @click.prevent="ShowGlo('glo3')" href="#" class="label label-glo3" title="Digital literacy">GLO3</a> 
-  				<a @click.prevent="ShowGlo('glo4')" href="#" class="label label-glo4" title="Critical thinking">GLO4</a> 
-  				<a @click.prevent="ShowGlo('glo5')" href="#" class="label label-glo5" title="Problem solving">GLO5</a> 
-  				<!-- <a @click.prevent="ShowGlo('glo6')" href="#" class="label label-glo6" title="Self-management">GLO6</a>  -->
-  				<!-- <a @click.prevent="ShowGlo('glo7')" href="#" class="label label-glo7" title="Teamwork">GLO7</a> -->
-  				<!-- <a @click.prevent="ShowGlo('glo8')" href="#" class="label label-glo8" title="Global citizenship">GLO8</a> -->&nbsp; 
-  				or	<a @click.prevent="ResetGlos"   href="#" class="label label-reset"  title="Reset all">RESET</a> 
+  	<div class="section sticky" data-sticky data-margin-top="0">
+  		<div class="row">
+  			<div class="small-12 small-centered text-center columns sticky-content">
+  	
+  				<div class="tags">
+  					<strong>Show:</strong>&nbsp;
+  					<!-- <a @click.prevent="ShowGlo('glo2')" href="#" class="label label-glo2" title="Communication">GLO2</a>  -->
+  					<a @click.prevent="ShowGlo('glo3')" href="#" class="label has-tip label-glo3" data-tooltip aria-haspopup="true" data-click-open="false" data-disable-hover="false" data-position="bottom" title="Digital literacy">GLO3</a> 
+  					<a @click.prevent="ShowGlo('glo4')" href="#" class="label label-glo4" data-tooltip aria-haspopup="true" data-click-open="false" data-disable-hover="false" data-position="bottom" title="Critical thinking">GLO4</a> 
+  					<a @click.prevent="ShowGlo('glo5')" href="#" class="label label-glo5" data-tooltip aria-haspopup="true" data-click-open="false" data-disable-hover="false" data-position="bottom" title="Problem solving">GLO5</a> 
+  					<!-- <a @click.prevent="ShowGlo('glo6')" href="#" class="label label-glo6" title="Self-management">GLO6</a>  -->
+  					<!-- <a @click.prevent="ShowGlo('glo7')" href="#" class="label label-glo7" title="Teamwork">GLO7</a> -->
+  					<!-- <a @click.prevent="ShowGlo('glo8')" href="#" class="label label-glo8" title="Global citizenship">GLO8</a> -->
+  					&nbsp;
+  					<strong>or</strong>	&nbsp; <a @click.prevent="ResetGlos"   href="#" class="label label-reset"  title="Reset all">RESET</a> 
+  				</div>
+  				<nav>
+  					<ul class="dropdown menu align-center" data-dropdown-menu>
+  						<li>
+  							<a class="text-center menu-switch" href="#"><strong>Select a Topic</strong></a>
+  							<ul  class="menu  dd-menu" data-smooth-scroll  data-offset="100">
+  								<li><a href="#top">Introduction</a></li>
+  								<li><a href="#inter‐personal">Inter‐Personal</a></li>
+  								<li><a href="#communication">Communication</a></li>
+  								<li><a href="#self‐management">Self‐Management</a></li>
+  								<li><a href="#global-citizenship">Global Citizenship</a></li>
+  								<li><a href="#references">References</a></li>
+  							</ul>
+  						</li>
+  					</ul>
+  				</nav>
+  	
   			</div>
   		</div>
-  		<div class="sticky-border"></div>
   	</div>	<div class="row section">
   		<div class="small-8 small-centered columns list">
   			<!-- ==============================  introduction ==============================-->
@@ -57,8 +63,7 @@
   				<h4 class="text-center"><small>(ULO2)</small></h4>
   				<div class="lead">
   					<p class="intro">
-  						This portfolio incorporates four individual reflections based on the content discussed in SIT223 over the term. The reflections address the topics of inter-personal skills and team work, communication, self-management and global citizenship. The topics are introduced through the various assignments and exercises completed during the term including group work and seminars. The portfolio’s reflections follow the model found in the “Framework for reflective practice” (Williams, Woolliams &amp; Spiro 2012, p. 79). As communication is a core subject of this unit, this portfolio is also available as a word document <!-- Digital literacy -->
-  			<span :class="glo3" class="glo3">uploaded on cloud Deakin</span>. 
+  						This portfolio incorporates four individual reflections based on the content discussed in SIT223 over the term. The reflections address the topics of inter-personal skills and team work, communication, self-management and global citizenship. The topics are introduced through the various assignments and exercises completed during the term including group work and seminars. The portfolio’s reflections follow the model found in the “Framework for reflective practice” (Williams, Woolliams &amp; Spiro 2012, p. 79). As communication is a core subject of this unit, this portfolio is also available as a word document uploaded on SIT223 cloud Deakin. 
   					</p>
   				</div>
   			</div>			<!-- ==============================  teamwork inter‐personal ==============================-->
@@ -68,10 +73,11 @@
   				<h4>What?</h4>
   				<div class="read">
   					<p>GLO7 Teamwork describes a range of inter-personal skills, and knowledge about how a group interacts to reach a ‘common outcome’ (Deakin 2013). Team work is an essential learning in this unit and as we were placed into workgroup, I found that it was important to have a channel of communication. <!-- Digital literacy -->
-  			<span :class="glo3" class="glo3">I set up a Microsoft office online group which enabled sharing files, group emails and conversation. The group also made frequent use of the BBCollaborate for voice meetings.</p>
+  			<span :class="glo3" class="glo3">I set up a Microsoft office online group which enabled sharing files, group emails and conversation. The group also made frequent use of the BBCollaborate for voice meetings.</span></p>
   					<p>Three exercises required some amount of interaction with other students: <!-- Digital literacy -->
   			<span :class="glo3" class="glo3">the Media Watch assignment</span>, the interview practice and the <!-- Digital literacy -->
-  			<span :class="glo3" class="glo3">scenario analysis</span>.</p>
+  			<span :class="glo3" class="glo3">scenario</span> <!-- Problem solving -->
+  			<span :class="glo5" class="glo5">analysis</span>.</p>
   					<p>Unlike on campus students who are acquainted with each other and benefit of seminars to get together as groups, the group work for <!-- Digital literacy -->
   			<span :class="glo3" class="glo3">cloud student</span>s is self-organising and I found participation could be an issue.</p>
   					<p><!-- Critical thinking -->
@@ -84,7 +90,8 @@
   					A few core questions required <!-- Critical thinking -->
   			<span :class="glo4" class="glo4">the identification of an ethical dilemma</span>, which I was unable to outline. I presented my notes at the meeting and for over one hour the group discussed and expanded on each questions. I found the discussion process worked well. Importantly <!-- Critical thinking -->
   			<span :class="glo4" class="glo4">we formed a clear agreement that there was not ethical dilemma present in our scenario</span>.</p>
-  					<p>Teamwork in for the scenario analysis went smoothly and work was completed on time, in contrast with our first assignment which took over two weeks to complete. From the experience I have realised that being proactive pays off when it comes to remote group work.</p>
+  					<p>Teamwork during the <!-- Problem solving -->
+  			<span :class="glo5" class="glo5">scenario analysis</span> went smoothly and work was completed on time, in contrast with our first assignment which took over two weeks to complete. From the experience I have realised that being proactive pays off when it comes to remote group work.</p>
   				</div>
   				<h4>So What?</h4>
   				<div class="read">
@@ -114,9 +121,11 @@
   			<span :class="glo3" class="glo3">digital literacy</span>, body language and emotional intelligence (Nicole Koehler 2015, pp. 1-5). Communication is a core subject in this unit. Inter-personal communication was initially introduced in week two with <!-- Critical thinking -->
   			<span :class="glo4" class="glo4">assignment one</span> <!-- Digital literacy -->
   			<span :class="glo3" class="glo3">Media Watch</span>. The following weeks discussed communication in the form of self-promotion.</p>
-  					<p>The second week seminar required us to develop a Me in a Minute (MIM) speech, a self-promotional piece to showcase a relevant set of skills to a potential employer. The MIM exercise was initiated by the elevator speech exercise of week one. During that online seminar I could not bring myself to come up with an elevator speech. I did not find the premise of the elevator speech scenario inspiring. Arguably, the exercise is important not the context, yet the situation is a trigger for inspiration, I find. The days following I thought about the employment I would like, the sort of person I would likely to enthuse to, and then wrote an elevator speech.</p>
+  					<p>The second week seminar required us to develop a Me in a Minute (MIM) speech, a self-promotional piece to showcase a relevant set of skills to a potential employer. The MIM exercise was initiated by the elevator speech exercise of week one. During that online seminar I could not bring myself to come up with an elevator speech. I did not find the premise of the elevator speech scenario inspiring. Arguably, the exercise is important not the context, yet the situation is a trigger for inspiration, I find. <!-- Problem solving -->
+  			<span :class="glo5" class="glo5">The days following I thought about the employment I would like, the sort of person I would likely to enthuse to, and then wrote an elevator speech.</span></p>
   					<p>Although the thought process behind creating a MIM was very similar, there were some notable differences. The foremost is that unlike an elevator speech, a MIM is not based on role play. I was required to expand on a set of skills and other attributes pertaining to my field of study (a catch-22 (Nichols 1970)). While <!-- Digital literacy -->
-  			<span :class="glo3" class="glo3">I have acquired some IT skills</span> from freelancing I have very little confidence in how these skills compare in an actual ICT workplace. Additionally, I am employed part time in the hospitality industry and I am a career changer. <br>I struggled to write my MIM, but after a while I was able to extract transferable skills from my current and past employment as well, as expand on the small range of hard skills acquired from my current studies and working on websites.</p>
+  			<span :class="glo3" class="glo3">I have acquired some IT skills</span> from freelancing I have very little confidence in how these skills compare in an actual ICT workplace. Additionally, I am employed part time in the hospitality industry and I am a career changer. <br>I struggled to write my MIM, but after a while <!-- Problem solving -->
+  			<span :class="glo5" class="glo5">I was able to extract transferable skills from my current and past employment</span> as well, as expand on the small range of hard skills acquired from my current studies and working on websites.</p>
   					<p>Week 6 was about developing a resume and cover letter. Having worked on the MIM made the process much easier. However, I took advantage of the resources made available during the seminar and <!-- Digital literacy -->
   			<span :class="glo3" class="glo3">sent my resume to Deakin Talent many times in order to get feedback</span>. I was very impressed with Deakin Talent and made full use of the feedback I received. Later on in the unit, the week nine seminar introduced the Skills Framework for the Information Age (SFIA 2017b), a resource I will exploit in order to improve my MIM, resume and other pieces of self-promotional communication.</p>
   				</div>
@@ -144,7 +153,8 @@
   			<span :class="glo3" class="glo3">Trello boards</span>, discussed in week seven, although less often. I was pleased to find these classes confirmed I had taken the right steps to manage my time.</p>
   					<p>Studying part time makes for a very slow progress. Although I intend to finish my degree by term two 2019 and complete an internship in term three 2019, I frequently reflect about ways of speeding things up. Among the points made in the ‘4D approach to time management’ in week four, I found de-commitment to be a plausible solution to that problem.</p>
   					<p>Self-management also includes setting goals, short term and long term (UCD 2015). Many of the activities in this unit required me to analyse my current position and formalise my goals. While The Me in a Minute and resume building focused on ‘me now’, <!-- Critical thinking -->
-  			<span :class="glo4" class="glo4">the skills audit assignment</span> forced me to spell out my career aspirations in the short and long term identifying the gaps in my skillset and delineate a strategy to address these gaps.</p>
+  			<span :class="glo4" class="glo4">the skills audit assignment</span> forced me to spell out my career aspirations in the short and long term <!-- Problem solving -->
+  			<span :class="glo5" class="glo5">identifying the gaps in my skillset and delineate a strategy to address these gaps</span>.</p>
   					<p>I found this activity to be challenging. <!-- Critical thinking -->
   			<span :class="glo4" class="glo4">I had to propose valid solutions to address my skill gaps within realistic time frames. This meant thinking clearly about my aspirations and taking them apart into achievable targets.</span></p>
   				</div>
@@ -167,16 +177,19 @@
   				<div class="read">
   					<p>Global citizenship is about the skills required to engage with a social and cultural environment other than one’s own. Global citizenship incorporates the skills required to identify, from one’s own discipline-related cultural circle, with a group that does not share the same knowledge (Deakin 2015c) and behave ‘ethically and productively in the professional context’ (Deakin 2015a).</p>
   					<p>From week eight to week ten including assignment three, this unit introduced <!-- Critical thinking -->
-  			<span :class="glo4" class="glo4">professionalism and ethics in the workplace</span>. In week nine, <!-- Digital literacy -->
+  			<span :class="glo4" class="glo4">professionalism</span> and <!-- Problem solving -->
+  			<span :class="glo5" class="glo5">ethics in the workplace</span>. In week nine, <!-- Digital literacy -->
   			<span :class="glo3" class="glo3">I visited the website sfia-online.org</span> to assess my current skills against the framework (SFIA 2017a, 2017b). The Skills Framework for the Information Age (SFIA), I find, is a good tool to communicate one’s own skills across various discipline, and one that I will make use of. One of the topic discussed in week ten was internship. SFIA, or <!-- Digital literacy -->
-  			<span :class="glo3" class="glo3">the Australian Computer Society (ACS)</span> equivalent, will help me to address the specific requirement of a future internship position and, if anything, appear more professional.</p>
+  			<span :class="glo3" class="glo3">the Australian Computer Society (ACS)</span> equivalent, will help me to <!-- Problem solving -->
+  			<span :class="glo5" class="glo5">address the specific requirement of a future internship position</span> and, if anything, appear more professional.</p>
   					<p>Another example on the topic of global citizenship was the work done in <!-- Critical thinking -->
   			<span :class="glo4" class="glo4">assignment three</span>. The exercise required our group to identify a number of <!-- Critical thinking -->
-  			<span :class="glo4" class="glo4">ethical issues in a workplace scenario</span>. From this exercise I leaned that to refer to authorities such as the ACS Code of Conduct and others helped articulate an informed appraisal when faced with an ethical dilemma.</p>
+  			<span :class="glo4" class="glo4">ethical issues in a workplace scenario</span>. From this exercise I leaned that to <!-- Problem solving -->
+  			<span :class="glo5" class="glo5">refer to authorities such as the ACS Code of Conduct and others</span> helped articulate an informed appraisal when faced with an ethical dilemma.</p>
   				</div>
   				<h4>So What?</h4>
   				<div class="read">
-  					<p>Global citizenship is about identifying my ICT-related cultural knowledge and expectation in order to apprehend other’s discipline-related culture.</p>
+  					<p>Global citizenship is about identifying my ICT-related cultural knowledge and expectation in order to understand other’s discipline-related culture.</p>
   					<p>Through freelancing I am currently involved in a job for a long standing client. They, my client, required a ‘visual’ update of their site. <!-- Digital literacy -->
   			<span :class="glo3" class="glo3">The site is built upon an old open source content management system. My client has a set of expectations regarding the visual look of their site. They envision a clean and simple layout, such as the flat designs currently trending in web design, in their eyes a simple visual update. My understanding of their request matches their design vision, but not simply as a pretty look, but rather as the design being the direct consequence of a mobile first and responsive approach. The core of their current site depends on a single outdated JavaScript framework and the poor separation of concern makes for a slow and error prone updating process.</span> Although I have made the client aware of the situation, the fact remains that I feel the pressure is on me to update the site within a reasonable time frame.</p>
   					<p>In this scenario, I have clearly failed to reach out to my client appropriately. <!-- Critical thinking -->
@@ -209,7 +222,7 @@
   					<p>UCD 2015, Self-Management, Trinity College Dublin, retrieved 21 September 2017, <a href="https://student-learning.tcd.ie/undergraduate/topics/self-management/">&lt;https://student-learning.tcd.ie/undergraduate/topics/self-management/&gt;</a>.</p>
   					<p>Williams, K, Woolliams, M &amp; Spiro, J 2012, Reflective writing, Pocket study skills, Palgrave Macmillan, Houndmills, Basingstoke, Hampshire ; New York.</p>
   				
-  				<h4>Catch 22</h4>
+  				<h4>Promoting the very skills you are studying: <br>Catch 22</h4>
   				<iframe width="560" height="315" src="https://www.youtube.com/embed/Unn8fgs8fao?showinfo=0" frameborder="0" allowfullscreen></iframe>
   				</div>
   				<hr>

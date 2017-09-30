@@ -2,7 +2,7 @@
 * @Author: xavier
 * @Date:   2017-09-26 15:33:10
 * @Last Modified by:   xavier
-* @Last Modified time: 2017-09-28 22:19:48
+* @Last Modified time: 2017-10-01 00:11:06
 */
 
 // Colors lib
@@ -31,10 +31,6 @@ h4 {
 }
 
 // Misc
-.top {
-	padding-top: 1rem;
-}
-
 .read {
 	border-left: 0.2rem solid $medium-gray;
 	padding-left: 1rem;
@@ -46,14 +42,16 @@ h4 {
 }
 
 // Nav & Dropdown
-nav {
+// -----------------------------------------------------
+.tags {
 	margin-bottom: $global-padding;
 }
 
 .is-dropdown-submenu {
 	border-left: 0;
 	border-right: 0;
-	border-color: map-get($pantone, paloma);
+	border-color: map-get($pantone, placid-blue);
+
 
 	a {
 		text-align: center;
@@ -62,6 +60,10 @@ nav {
 			color: $white;
 		}
 	}
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+	margin-top: 0px;
 }
 
 // Labels 
@@ -79,15 +81,27 @@ nav {
 .label-reset { background: $white; color: $dark-gray}
 
 // Sticky
+.top {
+	background: $dark-gray;
+	padding-top: 1rem;
+	h1{
+		color: $white;
+	}
+}
+.sticky {
+	background: $dark-gray;
+}
 .sticky-content {
-	background: $white;
-	padding:.5rem 0 $global-padding 0;
-}
-.sticky-border {
-	height: 1rem;
-	background: $white;
-	opacity: 0.8;
-}
+	padding: $global-padding 0;
+	color: $white;
+	strong { 
+		color: $white;}
+	}
+	.sticky-border {
+		height: 1rem;
+		background: $white;
+		opacity: 0.8;
+	}
 
 // Hilight & animation
 .glo2, .glo3, .glo4, .glo5,.glo6, .glo7, .glo8 {
@@ -101,7 +115,7 @@ nav {
 }
 
 .is-selected {
-	color: $white;
+	color: #fff;
 	opacity: 0.8;
 	animation: 1s ease-in fadeIn;
 	&.glo2 { background: map-get($pantone, celosia-orange); }

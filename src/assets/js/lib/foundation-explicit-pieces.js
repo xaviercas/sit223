@@ -96,7 +96,7 @@ Foundation.plugin(Sticky, 'Sticky');
 
 // Foundation.plugin(Toggler, 'Toggler');
 
-// Foundation.plugin(Tooltip, 'Tooltip');
+Foundation.plugin(Tooltip, 'Tooltip');
 
 // Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
 

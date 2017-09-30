@@ -22249,7 +22249,7 @@ _foundation.Foundation.plugin(_foundation18.Sticky, 'Sticky');
 
 // Foundation.plugin(Toggler, 'Toggler');
 
-// Foundation.plugin(Tooltip, 'Tooltip');
+_foundation.Foundation.plugin(_foundation21.Tooltip, 'Tooltip');
 
 // Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
 
