@@ -1,6 +1,6 @@
 # SIT223 Portfolio Assignement
 ## What is this?
-This repository is a Deakin university assignment, the content of which cannot be appropriated, copied or shared.
+This repository is a Deakin university assignment, the content of which cannot be copied or appropriated. the site is piublished here: <https://xaviercas.github.io/sit223/>.
 
 ## Thank you
 This repository is the source for a simple one page site hosted on github. 
